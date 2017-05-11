@@ -35,9 +35,10 @@ public class GooglePlay
         }
     }
     
-    public void comprar()
+    public int comprar(String usuario, String nombre)
     {
-
+        
+        return -1;
     }
     
     public int getNumeroUsuarios()

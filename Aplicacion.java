@@ -4,6 +4,7 @@ public class Aplicacion extends Producto
     private double mBProducto;
     private Categoria categoria;
     private int vecesVendida;
+    private double precio;
     
     public Aplicacion(String nombre, double mb , Categoria categoria)
     {
@@ -11,6 +12,26 @@ public class Aplicacion extends Producto
         nombreProducto = nombre;
         mBProducto = mb;
         this.categoria = categoria;
+        precio = 0.99;
+        switch(categoria)
+        {
+            case JUEGOS:
+            precio = 5;
+            break;
+            
+            case PRODUCTIVIDAD:
+            precio = 10;
+            break;
+            
+            case MULTIMEDIA:
+            precio = 2;
+            break;
+            
+            case COMUNICACIONES:
+            precio = 2;
+            break;
+        }
+        
     }
     
     public String getNombre()
